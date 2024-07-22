@@ -1,8 +1,6 @@
 # Необхідно "перевернути" 5-ти значне число
 
-print("Enter your number")
-
-number = input()[:: -1]
+number = input('Enter your number: ')[:: -1]
 print(number)
 
 

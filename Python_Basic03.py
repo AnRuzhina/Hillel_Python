@@ -1,15 +1,11 @@
 # Виведення числа в стовпчик
 
-print("Enter your number")
-
-number = input()
+number = input('Enter your number: ')
 print(*number, sep='\n')
 
 # or
 
-print("Enter your number")
-
-number = int(input())
+number = int(input("Enter your number: "))
 
 number1 = number // 1000
 print(number1)
