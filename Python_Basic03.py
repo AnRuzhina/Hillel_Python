@@ -5,7 +5,7 @@ print(*number, sep='\n')
 
 # or
 
-number = int(input("Enter your number:  "))
+number = int(input("Enter your number: "))
 
 number1 = number // 1000
 print(number1)
