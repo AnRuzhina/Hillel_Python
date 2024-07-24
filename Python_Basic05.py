@@ -19,7 +19,7 @@ if len(list1) / 2 != 0 and len(list1) != 1 and len(list1) == 5 and not len(list1
     print(list1)
 
 list2 = [1]
-if len(list2) / 2 != 0 and len(list2) != 1 and len(list2) != 3 and len(lis21) != 5 and len(list2) / 4 != 0:
+if len(list2) / 2 != 0 and len(list2) != 1 and len(list2) != 3 and len(list2) != 5 and len(list2) / 4 != 0:
     list2.remove(10)
     list2.insert(0, 10)
     print(list2)
