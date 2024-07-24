@@ -1,5 +1,6 @@
 # Розділити один список на два списки
 
+
 lst_of_numbers = []
 
 if len(lst_of_numbers) / 2 != 0 and len(lst_of_numbers) != 1 and len(lst_of_numbers) != 3:
