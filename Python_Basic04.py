@@ -1,22 +1,18 @@
 # Розділити один список на два списки
 
 lst_of_numbers = []
+result_list = []
+first_list = []
+second_list = []
+index = len(lst_of_numbers) / 2
 
-if len(lst_of_numbers) != 0 and len(lst_of_numbers) != 1 and len(lst_of_numbers) != 2:
-    lst_multiple = [lst_of_numbers[i:i + 3] for i in range(0, len(lst_of_numbers), 3)]
-    print(lst_multiple)
+for i in range(len(lst_of_numbers)):
+    if i < index:
+        first_list.append(lst_of_numbers[i])
+for i in range(len(lst_of_numbers)):
+    if i > index:
+        second_list.append(lst_of_numbers[i])
 
-if len(lst_of_numbers) != 0 and len(lst_of_numbers) != 1 and len(lst_of_numbers) == 2:
-    lst_multiple = [lst_of_numbers[i:i + 1] for i in range(0, len(lst_of_numbers), 1)]
-    print(lst_multiple)
-
-elif len(lst_of_numbers) != 0 and len(lst_of_numbers) == 1:
-    lst_multiple = [lst_of_numbers[i:i + 1] for i in range(0, len(lst_of_numbers), 1)]
-    lst_multiple.append([])
-    print(lst_multiple)
-
-elif len(lst_of_numbers) == 0:
-    lst_multiple = [lst_of_numbers[i:i + 1] for i in range(0, len(lst_of_numbers), 1)]
-    lst_multiple.append([])
-    lst_multiple.append([])
-    print(lst_multiple)
+result_list.append(first_list)
+result_list.append(second_list)
+print(result_list)
