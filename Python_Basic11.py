@@ -1,7 +1,7 @@
 #  Модифікувати калькулятор
 
 question = input("Make calculation?: ")
-while question in question:
+while True:
     answer = question
     if answer == "y":
         numb1 = float(input('Enter first number:  '))
@@ -22,8 +22,12 @@ while question in question:
             print("Mistake: invalid operator")
             exit()
         print("Result:", result)
+    if answer == "n":
+         print("Calculation finished")
+    continue
         question = input("Make calculation?: ")
-        continue
+# continue
     if answer == "n":
         print("Calculation finished")
-    break
+
+# break
