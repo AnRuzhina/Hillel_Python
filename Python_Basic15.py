@@ -1,5 +1,5 @@
 #  Добуток чисел
-def multiply_digits_until_single_digit(number):
+def to_single_digit(number):
     while number > 9:
         product = 1
         for digit in str(number):
@@ -9,5 +9,5 @@ def multiply_digits_until_single_digit(number):
 
 
 user_input = int(input("Enter number: "))
-result = multiply_digits_until_single_digit(user_input)
+result = to_single_digit(user_input)
 print(f"Result: {result}")
