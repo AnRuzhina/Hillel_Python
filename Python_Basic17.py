@@ -1,7 +1,6 @@
 # Модифікувати рядок
 def correct_sentence(text):
     corrected_text = text[0].upper() + text[1:]
-#    corrected_text = text.capitalize()
     if not corrected_text.endswith('.'):
         corrected_text += '.'
 
