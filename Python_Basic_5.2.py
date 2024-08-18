@@ -1,12 +1,13 @@
 #  Модифікувати калькулятор
 
-question = input("Make calculation?: ")
 while True:
-    answer = question
-    if answer == "y":
-        numb1 = float(input('Enter first number:  '))
+    question = input("Make calculation? (y/n): ").strip().lower()
+
+    if question == "y":
+        numb1 = float(input('Enter first number: '))
         operator = input('Enter operator ( +, -, *, /): ')
-        numb2 = float(input('Enter second number:  '))
+        numb2 = float(input('Enter second number: '))
+
         if operator == "+":
             result = numb1 + numb2
         elif operator == "-":
@@ -16,18 +17,15 @@ while True:
         elif operator == "/":
             if numb2 == 0:
                 print('Mistake: division by zero!')
-                exit()
+                continue  # Повертаємося на початок циклу
             result = numb1 / numb2
         else:
             print("Mistake: invalid operator")
-            exit()
-        print("Result:", result)
-    if answer == "n":
-         print("Calculation finished")
-    continue
-        question = input("Make calculation?: ")
-# continue
-    if answer == "n":
-        print("Calculation finished")
+            continue  # Повертаємося на початок циклу
 
-# break
+        print("Result:", result)
+    elif question == "n":
+        print("Calculation finished")
+        break  # Виходимо з циклу
+    else:
+        print("Invalid input. Please enter 'y' to continue or 'n' to exit.")
